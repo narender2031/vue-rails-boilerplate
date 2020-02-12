@@ -1,0 +1,62 @@
+require: rubocop-rspec
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.5
+  Exclude:
+  - doc/**/*
+  - vendor/**/*
+  - db/schema.rb
+  - bin/*
+  - node_modules/**/*
+  - import.rb
+Rails:
+  Enabled: true
+Layout/LineLength:
+  Max: 140
+Metrics/BlockLength:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ClassLength:
+  Max: 160
+Metrics/ModuleLength:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: true
+  EnforcedStyle: brackets
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/BlockComments:
+  Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Style/ZeroLengthPredicate:
+  Enabled: false
+Bundler/OrderedGems:
+  Enabled: true
+RSpec/MultipleExpectations:
+  Max: 15
+RSpec/ExampleLength:
+  Max: 20
+RSpec/NestedGroups:
+  Max: 5
+Style/EachWithObject:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Max: 9
+Metrics/PerceivedComplexity:
+  Max: 9
+RSpec/MessageSpies:
+  Enabled: false
+Naming/PredicateName:
+  Enabled: false
