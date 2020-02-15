@@ -6,6 +6,7 @@ export function setupI18n() {
   Vue.use(VueI18n);
   
   const locale = getLocale();
+
   const i18n = new VueI18n({
     locale,
     messages
