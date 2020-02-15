@@ -6,13 +6,14 @@ import '../global-styles/index.scss';
 import jQuery from 'jquery';
 import Rails from 'rails-ujs';
 import 'bootstrap';
+import vue_rails_boilerplate from '../setup/vue_rails_boilerplate';
 
 // require("@rails/activestorage").start()
 // require("channels")
 
 Rails.start();
 window.$ = jQuery;
-
+window.vue_rails_boilerplate = vue_rails_boilerplate;
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

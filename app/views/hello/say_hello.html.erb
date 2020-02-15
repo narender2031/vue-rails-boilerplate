@@ -1,5 +1,11 @@
-<%= javascript_pack_tag 'hello_vue' %>
 <div id='hello'>
-  {{message}}
   <app></app>
 </div>
+
+<%= stylesheet_pack_tag 'hello_vue', media: 'all' %>
+<%= javascript_pack_tag 'hello_vue' %>
+<script>
+  $(document).ready(function () {
+    vue_rails_boilerplate.initSayHello('#hello');
+  })
+</script>
