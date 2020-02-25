@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import VeeValidate, { Validator } from 'vee-validate';
 
-export function setupValidations({ i18n }) {
+import * as Rules from '../validation/Rules'
+export function setupValidations(i18n) {
   Vue.use(VeeValidate)
   setupRules();
   setupI18n({ i18n });
